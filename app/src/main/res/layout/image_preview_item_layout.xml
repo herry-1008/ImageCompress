@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <com.herry.imagecompress.zoom.GestureImageView
+        xmlns:app="http://schemas.polites.com/android"
+        android:id="@+id/item_zoom_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:max-scale="10.0"
+        app:min-scale="0.75"/>
+
+    <ImageView
+        android:id="@+id/item_normal_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"/>
+</FrameLayout>
+
+

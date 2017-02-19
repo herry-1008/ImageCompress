@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/herry/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.4.0/f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2/picasso-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2">
+        <dex dex="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/pre-dexed/debug/picasso-2.4.0_5f51a8cebf7b0a4a22cc7e47069a2577148523c7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_6cf00d7391bb70ff002e6dcd02ee03398d6181a5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_510fca6b160eddecd5a2870dfa61bf49d578ba42.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_6b8a2f80765272b57f5ac1b7be4e24286abe8478.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-24.2.1_62c1195cb38abb8f58d770827c895a6a957071cd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/pre-dexed/debug/support-annotations-24.2.1_9b15afb044f22879962cd8590c6f2569d236c7da.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-24.2.1_1ace527e14d5533177a8ab5c1a2bf0854ebf22c2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/github/ImageCompress/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/Users/herry/github/ImageCompress/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-24.2.1_9d18c4ee1837a77a6730a6ff2a9ec537a6bc0890.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-24.2.1_654a7ad7f50b265fccd0ab00c078015a64ccd75b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_3211e13b7e7e453bdc8e3c656d6c0b182e8f2a82.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a07818a1ecabdb149998823429cce555af4b9cba">
+        <dex dex="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/pre-dexed/debug/com.jakewharton-butterknife-8.4.0_7511ce6ac91cb57e64bdc208698f5fd167e01fdd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.4.0/ea392375cf9ff59234a82e7928a204215ccc98cd/butterknife-annotations-8.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
+        <dex dex="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/pre-dexed/debug/butterknife-annotations-8.4.0_b3678b9fa9b4da7aff33a7e061832ccd1081d2d3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-24.2.1_15a82c485a5ccf8a2977fe1470b05578e8906443.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-24.2.1_0283093fade03947a3cdd2a2aad53d7ff34b88ae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-24.2.1_444befe72bd45b3debf8b4a591b94c0f9633948e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/github/ImageCompress/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/Users/herry/github/ImageCompress/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-24.2.1_b41e324d0f2da9970e4ab1e577e42cf709fd75a0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/github/ImageCompress/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/Users/herry/github/ImageCompress/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.2.1_c21ba289e2dc9bf8d328da04119d5c2f6415ee11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/github/ImageCompress/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/Users/herry/github/ImageCompress/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_20601be82351262e553fb2d729529c6103594276.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/github/ImageCompress/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/Users/herry/github/ImageCompress/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_5b3f996439941d27d6d1882fa2d31dea2207e01f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/exploded-aar/ImageCompress/multi-image-selector/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="68938bc4443b3480eec8b455f2f66ba570cf5ad0">
+        <dex dex="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/pre-dexed/debug/ImageCompress-multi-image-selector-unspecified_fecb77193d2a16241530387d199d868e3c7a1289.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/pre-dexed/debug/glide-3.7.0_afd16bac8ce6af6f6501abe449660689c851d0c2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_f18607b99fc74a641460d6448a86ffe29f3710a0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.11.0/840897fcd7223a8143f1d9b6f69714e7be34fd50/okio-1.11.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="840897fcd7223a8143f1d9b6f69714e7be34fd50">
+        <dex dex="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/pre-dexed/debug/okio-1.11.0_8110789737efd6ff40c2deca3e6581e4e691a1bb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/github/ImageCompress/app/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a07818a1ecabdb149998823429cce555af4b9cba">
+        <dex dex="/Users/herry/github/ImageCompress/app/build/intermediates/pre-dexed/debug/com.jakewharton-butterknife-8.4.0_bf59ce081748955e0df2106c346194b40b040050.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/github/ImageCompress/app/build/intermediates/exploded-aar/ImageCompress/multi-image-selector/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="68938bc4443b3480eec8b455f2f66ba570cf5ad0">
+        <dex dex="/Users/herry/github/ImageCompress/app/build/intermediates/pre-dexed/debug/ImageCompress-multi-image-selector-unspecified_b9a0006a78465c00b60ff9cadebef8df8fc7991a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/github/ImageCompress/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/Users/herry/github/ImageCompress/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_c57c6733f4b9b76f5ce1e57046cff7dd23678d96.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/github/ImageCompress/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/Users/herry/github/ImageCompress/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.2.1_d39519dbf6522cd557de69b69faa6a27ce3df45e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/github/ImageCompress/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/Users/herry/github/ImageCompress/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_cddc16126a82236298fc53aadee5fd27b4194c97.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.2.1_029654055805db48a5ea4fcfd52d56466bdb30d8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.2.1_fbe169d2fde73e36e574d340f158e97f5320c340.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/github/ImageCompress/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/Users/herry/github/ImageCompress/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.2.1_3ab24bc25f0ec61ac424c9ec6a4a65e71124659e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/github/ImageCompress/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/Users/herry/github/ImageCompress/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-24.2.1_b1b9cfb4b7c3af16e1568388cfe7c2b67688edac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/github/ImageCompress/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/Users/herry/github/ImageCompress/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-24.2.1_e20eedaf688416a6c5723a9a642b58f112e34d59.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/github/ImageCompress/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/herry/github/ImageCompress/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.2.1_21d3ba83f2d17c69497ba9a319b1560ebd4175c4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.2.1_ab139a083a8c87eec6b8aa92eba0f66d775dd4bd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/github/ImageCompress/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="/Users/herry/github/ImageCompress/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-24.2.1_64d3ebf5df04984f34c7ebdaa52be26465276ce7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/Users/herry/code/cornerstore/ImageCompress/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.2.1_b39d21c4fd6efcf743289f26755266246d759ae9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/github/ImageCompress/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/Users/herry/github/ImageCompress/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_0c6b67336485bf9cb3558126dbda7b563f8f4d8f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/herry/github/ImageCompress/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/Users/herry/github/ImageCompress/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-24.2.1_6c23320280379673f8148b7bb7c75ab6f0f7b128.jar" />
+    </item>
+
+</items>
