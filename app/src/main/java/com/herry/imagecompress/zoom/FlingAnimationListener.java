@@ -18,12 +18,11 @@ package com.herry.imagecompress.zoom;
 
 /**
  * @author Jason Polites
- *
  */
 public interface FlingAnimationListener {
 
-	public void onMove(float x, float y);
-	
-	public void onComplete();
-	
+    public void onMove(float x, float y);
+
+    public void onComplete();
+
 }

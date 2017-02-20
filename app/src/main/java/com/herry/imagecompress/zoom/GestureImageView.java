@@ -53,39 +53,57 @@ public class GestureImageView extends ImageView {
     private boolean layout = false;
 
     private float scaleAdjust = 1.0f;
-    private float startingScale = -1.0f;
+    public GestureImageViewListener defaultImageViewListener = new GestureImageViewListener() {
 
+        @Override
+        public void onTouch(float x, float y) {
+            // TODO Auto-generated method stub
+        }
+
+        @Override
+        public void onScale(float scale) {
+            // TODO Auto-generated method stub
+        }
+
+        @Override
+        public void onPosition(float x, float y) {
+            /** 当position改变时 */
+            /** position = 图片竖直中心轴相对View左边缘的距离 */
+            /** position = view的水平长度 - 图片水平长度的一般 */
+            double halfImage = GestureImageView.this.getScaledWidth() / 2.0;
+            double viewWidth = GestureImageView.this.getWidth();
+            System.out.println(x);
+            System.out.println(halfImage + "::" + (viewWidth - halfImage));
+            if (x == halfImage || x == (viewWidth - halfImage)) {
+                GestureImageView.this.getParent().requestDisallowInterceptTouchEvent(false);
+            } else {
+                GestureImageView.this.getParent().requestDisallowInterceptTouchEvent(true);
+            }
+        }
+    };
+    private float startingScale = -1.0f;
     private float scale = 1.0f;
     private float maxScale = 5.0f;
     private float minScale = 0.75f;
     private float fitScaleHorizontal = 1.0f;
     private float fitScaleVertical = 1.0f;
     private float rotation = 0.0f;
-
     private float centerX;
     private float centerY;
-
     private Float startX, startY;
-
     private int hWidth;
     private int hHeight;
-
     private int resId = -1;
     private boolean recycle = false;
     private boolean strict = false;
-
     private int displayHeight;
     private int displayWidth;
-
     private int alpha = 255;
     private ColorFilter colorFilter;
-
     private int deviceOrientation = -1;
     private int imageOrientation;
-
     private com.herry.imagecompress.zoom.GestureImageViewListener gestureImageViewListener;
     private com.herry.imagecompress.zoom.GestureImageViewTouchListener gestureImageViewTouchListener;
-
     private OnTouchListener customOnTouchListener;
     private OnClickListener onClickListener;
 
@@ -463,12 +481,12 @@ public class GestureImageView extends ImageView {
         }
     }
 
-    public void setScale(float scale) {
-        scaleAdjust = scale;
-    }
-
     public float getScale() {
         return scaleAdjust;
+    }
+
+    public void setScale(float scale) {
+        scaleAdjust = scale;
     }
 
     public float getImageX() {
@@ -509,12 +527,12 @@ public class GestureImageView extends ImageView {
         this.rotation = rotation;
     }
 
-    public void setGestureImageViewListener(com.herry.imagecompress.zoom.GestureImageViewListener pinchImageViewListener) {
-        this.gestureImageViewListener = pinchImageViewListener;
-    }
-
     public com.herry.imagecompress.zoom.GestureImageViewListener getGestureImageViewListener() {
         return gestureImageViewListener;
+    }
+
+    public void setGestureImageViewListener(com.herry.imagecompress.zoom.GestureImageViewListener pinchImageViewListener) {
+        this.gestureImageViewListener = pinchImageViewListener;
     }
 
     @Override
@@ -597,6 +615,13 @@ public class GestureImageView extends ImageView {
     }
 
     @Override
+    public void setImageMatrix(Matrix matrix) {
+        if (strict) {
+            throw new UnsupportedOperationException("Not supported");
+        }
+    }
+
+    @Override
     public void setScaleType(ScaleType scaleType) {
         if (scaleType == ScaleType.CENTER || scaleType == ScaleType.CENTER_CROP
                 || scaleType == ScaleType.CENTER_INSIDE) {
@@ -637,13 +662,6 @@ public class GestureImageView extends ImageView {
             throw new UnsupportedOperationException("Not supported");
         }
         super.setImageLevel(level);
-    }
-
-    @Override
-    public void setImageMatrix(Matrix matrix) {
-        if (strict) {
-            throw new UnsupportedOperationException("Not supported");
-        }
     }
 
     @Override
@@ -718,33 +736,4 @@ public class GestureImageView extends ImageView {
     public int getDeviceOrientation() {
         return deviceOrientation;
     }
-
-    public GestureImageViewListener defaultImageViewListener = new GestureImageViewListener() {
-
-        @Override
-        public void onTouch(float x, float y) {
-            // TODO Auto-generated method stub
-        }
-
-        @Override
-        public void onScale(float scale) {
-            // TODO Auto-generated method stub
-        }
-
-        @Override
-        public void onPosition(float x, float y) {
-            /** 当position改变时 */
-            /** position = 图片竖直中心轴相对View左边缘的距离 */
-            /** position = view的水平长度 - 图片水平长度的一般 */
-            double halfImage = GestureImageView.this.getScaledWidth() / 2.0;
-            double viewWidth = GestureImageView.this.getWidth();
-            System.out.println(x);
-            System.out.println(halfImage + "::" + (viewWidth - halfImage));
-            if (x == halfImage || x == (viewWidth - halfImage)) {
-                GestureImageView.this.getParent().requestDisallowInterceptTouchEvent(false);
-            } else {
-                GestureImageView.this.getParent().requestDisallowInterceptTouchEvent(true);
-            }
-        }
-    };
 }

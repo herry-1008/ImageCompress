@@ -27,8 +27,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import me.nereo.multi_image_selector.MultiImageSelectorActivity;
 
-public class MainActivity extends AppCompatActivity
-{
+public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
     private static final int REQUEST_IMAGE = 0x001;
@@ -52,8 +51,7 @@ public class MainActivity extends AppCompatActivity
     private boolean mCompressing;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
@@ -61,20 +59,16 @@ public class MainActivity extends AppCompatActivity
     }
 
     @Override
-    protected void onDestroy()
-    {
+    protected void onDestroy() {
         super.onDestroy();
         ImageCompressUtils.clear(getApplicationContext());
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data)
-    {
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == REQUEST_IMAGE)
-        {
-            if (resultCode == RESULT_OK)
-            {
+        if (requestCode == REQUEST_IMAGE) {
+            if (resultCode == RESULT_OK) {
                 // Get the result list of select image paths
                 List<String> path = data.getStringArrayListExtra(MultiImageSelectorActivity.EXTRA_RESULT);
                 // do your logic ....
@@ -87,32 +81,25 @@ public class MainActivity extends AppCompatActivity
     }
 
     @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults)
-    {
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (requestCode == REQUEST_PERMISSION)
-        {
-            if (grantResults[0] == PackageManager.PERMISSION_GRANTED)
-            {
+        if (requestCode == REQUEST_PERMISSION) {
+            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 requestImage();
-            }
-            else
-            {
+            } else {
                 Toast.makeText(this, "Permission Deny", Toast.LENGTH_SHORT).show();
             }
         }
     }
 
     @OnClick(R.id.choose_image_btn)
-    public void choosePhoto()
-    {
+    public void choosePhoto() {
         //TODO
         Log.d(TAG, "choosePhoto");
         int reqPermissionCode = 0x002;
         String[] permissions = new String[]{Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE};
         int result = ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
-        if (result != PackageManager.PERMISSION_GRANTED)
-        {
+        if (result != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, permissions, reqPermissionCode);
             return;
         }
@@ -121,11 +108,9 @@ public class MainActivity extends AppCompatActivity
 
 
     @OnClick(R.id.compress_image_btn)
-    public void compressPhoto()
-    {
+    public void compressPhoto() {
         Log.d(TAG, "compressPhoto");
-        if (mCompressing)
-        {
+        if (mCompressing) {
             Toast.makeText(this, "Compress ongoing, please waiting...", Toast.LENGTH_SHORT).show();
             return;
         }
@@ -135,8 +120,7 @@ public class MainActivity extends AppCompatActivity
     }
 
 
-    private void requestImage()
-    {
+    private void requestImage() {
         Intent intent = new Intent(this, MultiImageSelectorActivity.class);
 
         // whether show camera
@@ -151,8 +135,7 @@ public class MainActivity extends AppCompatActivity
         startActivityForResult(intent, REQUEST_IMAGE);
     }
 
-    private void initData()
-    {
+    private void initData() {
         mCompressing = false;
         mImageList = new ArrayList<String>();
         mOriginAdapter = new OriginAdapter();
@@ -168,13 +151,10 @@ public class MainActivity extends AppCompatActivity
     }
 
 
-    private class CompressTask extends AsyncTask<Void, CompressBean, Void>
-    {
+    private class CompressTask extends AsyncTask<Void, CompressBean, Void> {
         @Override
-        protected Void doInBackground(Void[] params)
-        {
-            for (int i = 0; i < mImageList.size(); i++)
-            {
+        protected Void doInBackground(Void[] params) {
+            for (int i = 0; i < mImageList.size(); i++) {
                 long start = System.currentTimeMillis();
                 String compressPath = ImageCompressUtils.compress(getApplicationContext(), mImageList.get(i));
                 long end = System.currentTimeMillis();
@@ -187,15 +167,13 @@ public class MainActivity extends AppCompatActivity
 
 
         @Override
-        protected void onProgressUpdate(CompressBean... values)
-        {
+        protected void onProgressUpdate(CompressBean... values) {
             super.onProgressUpdate(values);
             mCompressAdapter.addImage(values[0]);
         }
 
         @Override
-        protected void onPostExecute(Void aVoid)
-        {
+        protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
             Toast.makeText(MainActivity.this, "Compress Completed", Toast.LENGTH_SHORT).show();
         }

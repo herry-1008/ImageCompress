@@ -19,14 +19,12 @@ import java.util.List;
  * Created by herry on 2016/11/23.
  */
 
-public class ImagePreviewAdapter extends PagerAdapter
-{
+public class ImagePreviewAdapter extends PagerAdapter {
     private List<String> mImageList;
     private int mItemWidth;
     private int mItemHeight;
 
-    public ImagePreviewAdapter(Context context, List<String> imageList)
-    {
+    public ImagePreviewAdapter(Context context, List<String> imageList) {
         mImageList = imageList;
         DisplayMetrics dm = context.getResources().getDisplayMetrics();
         mItemWidth = dm.widthPixels;
@@ -34,32 +32,26 @@ public class ImagePreviewAdapter extends PagerAdapter
     }
 
     @Override
-    public int getCount()
-    {
+    public int getCount() {
         return mImageList.size();
     }
 
     @Override
-    public boolean isViewFromObject(View view, Object object)
-    {
+    public boolean isViewFromObject(View view, Object object) {
         return view == object;
     }
 
     @Override
-    public Object instantiateItem(ViewGroup container, int position)
-    {
+    public Object instantiateItem(ViewGroup container, int position) {
         View view = LayoutInflater.from(container.getContext()).inflate(R.layout.image_preview_item_layout, container, false);
         GestureImageView iv = (GestureImageView) view.findViewById(R.id.item_zoom_view);
         ImageView normalIV = (ImageView) view.findViewById(R.id.item_normal_view);
         String imagePath = mImageList.get(position);
-        if (imagePath.endsWith("gif"))
-        {
+        if (imagePath.endsWith("gif")) {
             iv.setVisibility(View.GONE);
             normalIV.setVisibility(View.VISIBLE);
             Glide.with(container.getContext()).load(new File(imagePath)).override(100, 100).fitCenter().into(normalIV);
-        }
-        else
-        {
+        } else {
             iv.setVisibility(View.VISIBLE);
             normalIV.setVisibility(View.GONE);
             Glide.with(container.getContext()).load(new File(imagePath)).override(mItemWidth, mItemHeight).fitCenter().into(iv);
@@ -69,8 +61,7 @@ public class ImagePreviewAdapter extends PagerAdapter
     }
 
     @Override
-    public void destroyItem(ViewGroup container, int position, Object object)
-    {
+    public void destroyItem(ViewGroup container, int position, Object object) {
         container.removeView((View) object);
     }
 }

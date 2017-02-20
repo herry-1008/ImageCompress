@@ -26,17 +26,14 @@ import android.view.View.OnTouchListener;
 
 public class GestureImageViewTouchListener implements OnTouchListener {
 
-    private GestureImageView image;
-    private OnClickListener onClickListener;
-
     private final PointF current = new PointF();
     private final PointF last = new PointF();
     private final PointF next = new PointF();
     private final PointF midpoint = new PointF();
-
     private final com.herry.imagecompress.zoom.VectorF scaleVector = new VectorF();
     private final com.herry.imagecompress.zoom.VectorF pinchVector = new VectorF();
-
+    private GestureImageView image;
+    private OnClickListener onClickListener;
     private boolean touched = false;
     private boolean inZoom = false;
 

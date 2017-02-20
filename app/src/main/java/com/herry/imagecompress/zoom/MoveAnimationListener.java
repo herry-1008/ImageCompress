@@ -18,10 +18,9 @@ package com.herry.imagecompress.zoom;
 
 /**
  * @author Jason Polites
- *
  */
 public interface MoveAnimationListener {
 
-	public void onMove(float x, float y);
-	
+    public void onMove(float x, float y);
+
 }

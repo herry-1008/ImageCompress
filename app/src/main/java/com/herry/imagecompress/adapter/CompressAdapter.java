@@ -30,68 +30,57 @@ import butterknife.ButterKnife;
  * Created by herry on 2016/11/23.
  */
 
-public class CompressAdapter extends RecyclerView.Adapter
-{
+public class CompressAdapter extends RecyclerView.Adapter {
 
     private List<CompressBean> mImageList;
 
-    public CompressAdapter()
-    {
+    public CompressAdapter() {
         mImageList = new ArrayList<CompressBean>();
     }
 
-    public CompressAdapter(Activity act, List<CompressBean> imageList)
-    {
+    public CompressAdapter(Activity act, List<CompressBean> imageList) {
         mImageList = imageList;
     }
 
-    public void clear()
-    {
+    public void clear() {
         mImageList.clear();
         notifyDataSetChanged();
     }
 
-    public void addImage(CompressBean compressBean)
-    {
+    public void addImage(CompressBean compressBean) {
         mImageList.add(compressBean);
         notifyDataSetChanged();
     }
 
     @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType)
-    {
+    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.compress_image_item_layout, parent, false);
         return new CompressViewHolder(itemView);
     }
 
     @Override
-    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position)
-    {
+    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         ((CompressViewHolder) holder).bindView(position);
     }
 
     @Override
-    public int getItemCount()
-    {
+    public int getItemCount() {
         return mImageList.size();
     }
 
-    public class CompressViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener
-    {
+    public class CompressViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         @BindView(R.id.item_icon)
         ImageView iconView;
         @BindView(R.id.item_desc)
         TextView descView;
 
-        public CompressViewHolder(View itemView)
-        {
+        public CompressViewHolder(View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
             itemView.setOnClickListener(this);
         }
 
-        protected void bindView(int position)
-        {
+        protected void bindView(int position) {
             CompressBean compressBean = mImageList.get(position);
             Glide.with(itemView.getContext()).load(new File(compressBean.getImagePath())).override(itemView.getContext().getResources().getDimensionPixelSize(R.dimen.icon_size), itemView.getContext().getResources().getDimensionPixelSize(R.dimen.icon_size)).centerCrop().into(iconView);
             descView.setText(ImageCompressUtils.decodeImageSize(compressBean.getImagePath()));
@@ -102,8 +91,7 @@ public class CompressAdapter extends RecyclerView.Adapter
         }
 
         @Override
-        public void onClick(View v)
-        {
+        public void onClick(View v) {
             Context context = v.getContext();
             Intent i = new Intent(context, PhotoPreviewActivity.class);
             i.putExtra(Constants.EXTRA_PREVIEW_START_POSITION, getAdapterPosition());

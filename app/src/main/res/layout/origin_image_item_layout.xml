@@ -5,8 +5,8 @@
     android:layout_marginLeft="5dp"
     android:layout_marginRight="5dp"
     android:clickable="true"
-    android:focusable="true"
     android:descendantFocusability="blocksDescendants"
+    android:focusable="true"
     android:orientation="vertical">
 
     <ImageView

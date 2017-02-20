@@ -8,6 +8,21 @@ import android.os.Parcelable;
  */
 
 public class CompressBean implements Parcelable {
+    public static final Parcelable.Creator<CompressBean> CREATOR = new Parcelable.Creator<CompressBean>() {
+
+        @Override
+        public CompressBean createFromParcel(Parcel source) {
+            CompressBean ret = new CompressBean();
+            ret.setImagePath(source.readString());
+            ret.setTimeInterval(source.readLong());
+            return ret;
+        }
+
+        @Override
+        public CompressBean[] newArray(int size) {
+            return new CompressBean[size];
+        }
+    };
     private String imagePath;
     private long timeInterval;
 
@@ -54,21 +69,5 @@ public class CompressBean implements Parcelable {
         dest.writeString(imagePath);
         dest.writeLong(timeInterval);
     }
-
-    public static final Parcelable.Creator<CompressBean> CREATOR = new Parcelable.Creator<CompressBean>() {
-
-        @Override
-        public CompressBean createFromParcel(Parcel source) {
-            CompressBean ret = new CompressBean();
-            ret.setImagePath(source.readString());
-            ret.setTimeInterval(source.readLong());
-            return ret;
-        }
-
-        @Override
-        public CompressBean[] newArray(int size) {
-            return new CompressBean[size];
-        }
-    };
 
 }
